@@ -16,38 +16,38 @@ class Splash extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Stack(
-      alignment: Alignment.bottomCenter,
-      children: [
-        PageView(
-          controller: controller,
-          scrollDirection: Axis.horizontal,
-          children: const [
-            Splash1View(),
-            Splash2View(),
-            RateUsView()
-          ],
-        ),
-        Padding(
-          padding: const EdgeInsets.only(bottom: 40),
-          child: SmoothPageIndicator(
-              controller: controller,  // PageController
-              count:  3,
-              effect: const SlideEffect(
-                   spacing: 8.0,
-                   radius: 4.0,
-                   dotWidth: 29,
-                   dotHeight: 8.0,
-                  paintStyle: PaintingStyle.stroke,
-                   strokeWidth: 0,
-                   dotColor: Colors.grey,
-                   activeDotColor: Colors.white
-    ), // your preferred effect
-              onDotClicked: (index){
-              }
+        alignment: Alignment.bottomCenter,
+        children: [
+          PageView(
+            controller: controller,
+            scrollDirection: Axis.horizontal,
+            children: const [
+              Splash1View(),
+              Splash2View(),
+              RateUsView()
+            ],
           ),
-        ),
-      ],
-    );
+          Padding(
+            padding: const EdgeInsets.only(bottom: 40),
+            child: SmoothPageIndicator(
+                controller: controller,  // PageController
+                count:  3,
+                effect: const SlideEffect(
+                     spacing: 8.0,
+                     radius: 4.0,
+                     dotWidth: 29,
+                     dotHeight: 8.0,
+                    paintStyle: PaintingStyle.stroke,
+                     strokeWidth: 0,
+                     dotColor: Colors.grey,
+                     activeDotColor: Colors.white
+      ), // your preferred effect
+                onDotClicked: (index){
+                }
+            ),
+          ),
+        ],
+      );
 
 
 

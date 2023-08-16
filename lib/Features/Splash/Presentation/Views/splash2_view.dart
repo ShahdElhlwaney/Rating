@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 
+import '../../../../Core/Methods/set_status_bar_color.dart';
 import 'Widgets/splash2_view_body.dart';
 
 class Splash2View extends StatelessWidget {
@@ -10,7 +11,9 @@ class Splash2View extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   // setStatusBarColor();
+
+    return const Scaffold(
       body: Splash2ViewBody()
     );
   }

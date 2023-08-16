@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../Core/Methods/set_status_bar_color.dart';
+
 class ImageScreen extends StatelessWidget {
   const ImageScreen({
     super.key, required this.imageUrl,
@@ -8,11 +10,11 @@ class ImageScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    setStatusBarColor();
     return Container(
       decoration:  BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
           image:  DecorationImage(
-              fit: BoxFit.fill,
+              fit: BoxFit.cover,
               image: AssetImage(imageUrl))
       ),
     );
