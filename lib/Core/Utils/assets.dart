@@ -6,4 +6,5 @@ abstract class Assets
   static const rateUs='Images/rate_us.png';
   static const logo='Images/logo.png';
   static const helpIcon='Images/help_icon.png';
+  static const thanksRating='Images/thanks_rating.png';
 }

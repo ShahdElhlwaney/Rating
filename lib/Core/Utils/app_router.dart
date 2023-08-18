@@ -6,6 +6,7 @@ import '../../Features/Rating/Presentation/Views/client_rate_view.dart';
 import '../../Features/Rating/Presentation/Views/client_services_view.dart';
 import '../../Features/Rating/Presentation/Views/emoji_view.dart';
 import '../../Features/Rating/Presentation/Views/start_rating_view.dart';
+import '../../Features/Rating/Presentation/Views/thanks_rating_view.dart';
 import '../../Features/Splash/Presentation/Views/Widgets/splash.dart';
 
 abstract class AppRouter
@@ -15,6 +16,7 @@ abstract class AppRouter
   static const kCheckSatisfiedView='/checkSatisfiedView';
   static const kClientServicesView='/clientServicesView';
   static const kClientRateView='/clientRateView';
+  static const kThanksRatingView='/thanksRatingView';
 // GoRouter configuration
   static final router = GoRouter(
     routes: [
@@ -41,6 +43,10 @@ abstract class AppRouter
       GoRoute(
         path: kClientRateView,
         builder: (context, state) => const ClientRateView(),
+      ),
+      GoRoute(
+        path: kThanksRatingView,
+        builder: (context, state) => const ThanksRatingView(),
       ),
     ],
   );

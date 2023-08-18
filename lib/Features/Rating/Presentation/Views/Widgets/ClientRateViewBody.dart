@@ -1,11 +1,13 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:rating_app/Core/Widgets/button.dart';
 import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/rate_text_field.dart';
 import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/skip_button.dart';
 import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/welcome_rating_section.dart';
 
+import '../../../../../Core/Utils/app_router.dart';
 import '../../../../../Core/Utils/styles.dart';
 
 class ClientRateViewBody extends StatelessWidget {
@@ -27,7 +29,9 @@ class ClientRateViewBody extends StatelessWidget {
             SizedBox(
               height: 214,
             ),
-            Button(text: 'Send', onPressed: () {  },),
+            Button(text: 'Send', onPressed: () {
+              GoRouter.of(context).push(AppRouter.kThanksRatingView);
+            },),
             SizedBox(height: 16,),
             SkipButton()
 

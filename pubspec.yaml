@@ -59,6 +59,7 @@ flutter:
     - Images/rate_us.png
     - Images/logo.png
     - Images/help_icon.png
+    - Images/thanks_rating.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
