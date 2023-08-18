@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:rating_app/Core/Utils/app_router.dart';
 import 'package:rating_app/Core/Utils/colors.dart';
 import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/skip_button.dart';
 import '../../../../../Core/Widgets/button.dart';
@@ -51,7 +53,9 @@ class _ClientAddedServicesSectionState extends State<ClientAddedServicesSection>
           ],
         ),
         const SizedBox(height: 87,),
-        Button(text: 'Send', onPressed: () {  }
+        Button(text: 'Send', onPressed: () {
+          GoRouter.of(context).push(AppRouter.kClientRateView);
+        }
           ,color: !isActive[0]&&!isActive[1]&&!isActive[2]&&!isActive[3]?ColorsApp.notActiveMainColor:ColorsApp.mainColor,),
         const SizedBox(height: 16,),
         const SkipButton()
