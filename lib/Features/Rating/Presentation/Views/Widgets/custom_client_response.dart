@@ -17,14 +17,15 @@ class CustomClientResponse extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 52,
+        height: 52,      // Border.all(color:color==ColorsApp.activeClientResponseColor?
+        //  ColorsApp.activeClientResponseColor:ColorsApp.inActiveEmojiColor)
        width: MediaQuery.of(context).size.width*.5-26,
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(color:color==ColorsApp.activeClientResponseColor?
-          ColorsApp.activeClientResponseColor:ColorsApp.inActiveEmojiColor)
+      ColorsApp.activeClientResponseColor:ColorsApp.inActiveEmojiColor)
         ),
         child: Text(text,style: Styles.textStyle12.copyWith(
           color: color==ColorsApp.activeClientResponseColor?Colors.white:

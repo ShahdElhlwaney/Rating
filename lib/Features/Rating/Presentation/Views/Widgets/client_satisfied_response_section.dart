@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:rating_app/Core/Utils/app_router.dart';
 import 'package:rating_app/Core/Utils/colors.dart';
 import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/skip_button.dart';
 import '../../../../../Core/Widgets/button.dart';
@@ -39,7 +41,9 @@ class _ClientSatisfiedResponseSectionState extends State<ClientSatisfiedResponse
               });
             },),
         const SizedBox(height: 32,),
-        Button(text: 'Send', onPressed: () {  },color: buttonColor,),
+        Button(text: 'Send', onPressed: () {
+          GoRouter.of(context).push(AppRouter.kClientServicesView);
+        },color: buttonColor,),
         const SizedBox(height: 16,),
         const SkipButton()
       ],
