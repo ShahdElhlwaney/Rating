@@ -28,7 +28,7 @@ class _StartRatingSectionState extends State<StartRatingSection> {
         },),
         const SizedBox(height: 24,),
         Button(text: 'Start rate', onPressed: () {
-          GoRouter.of(context).push(AppRouter.kSendEmojiView);
+          GoRouter.of(context).push(AppRouter.kEmojiView);
         },color: t==null?ColorsApp.notActiveMainColor:ColorsApp.mainColor,)
       ],
     );
