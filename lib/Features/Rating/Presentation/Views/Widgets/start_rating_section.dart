@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:rating_app/Core/Utils/app_router.dart';
 import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/text_field.dart';
 import '../../../../../Core/Utils/colors.dart';
 import '../../../../../Core/Utils/styles.dart';
@@ -25,7 +27,9 @@ class _StartRatingSectionState extends State<StartRatingSection> {
           });
         },),
         const SizedBox(height: 24,),
-        Button(text: 'Start rate', onPressed: () {  },color: t==null?ColorsApp.notActiveMainColor:ColorsApp.mainColor,)
+        Button(text: 'Start rate', onPressed: () {
+          GoRouter.of(context).push(AppRouter.kSendEmojiView);
+        },color: t==null?ColorsApp.notActiveMainColor:ColorsApp.mainColor,)
       ],
     );
   }
