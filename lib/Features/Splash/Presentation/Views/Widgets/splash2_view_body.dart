@@ -11,7 +11,7 @@ class Splash2ViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  ImageScreen(imageUrl: Assets.splash2,);
+    return  const ImageScreen(imageUrl: Assets.splash2,);
   }
 }
 

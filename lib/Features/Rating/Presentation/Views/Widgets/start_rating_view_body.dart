@@ -8,8 +8,6 @@ class StartRatingViewBody extends StatefulWidget {
   State<StartRatingViewBody> createState()=>_StartRatingViewBodyState();
 }
 class _StartRatingViewBodyState extends State<StartRatingViewBody> {
-  Color color=Colors.grey ;
-String? t;
   @override
   Widget build(BuildContext context) {
     return  const Padding(

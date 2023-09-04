@@ -9,8 +9,8 @@ class ClientServicesView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ClientServicesViewBody(),
+    return const Scaffold(
+      body: SafeArea(child: ClientServicesViewBody()),
     );
   }
 }

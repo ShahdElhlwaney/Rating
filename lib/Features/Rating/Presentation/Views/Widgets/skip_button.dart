@@ -15,12 +15,12 @@ class SkipButton extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       child: TextButton(onPressed: (){}
         , child: Text('Skip',style: Styles.textStyle14.copyWith(
-          color: ColorsApp.inActiveEmojiColor
+            color: ColorsApp.inActiveEmojiColor
         ),),
         style: TextButton.styleFrom(
 
             backgroundColor: Colors.white ,
-            shape: setBorderRadius4()
+            shape: setBorderRadius4WithBorder()
         ),),
     );
   }

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:rating_app/Core/Utils/app_router.dart';
-import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/text_field.dart';
 import '../../../../../Core/Utils/colors.dart';
 import '../../../../../Core/Utils/styles.dart';
 import '../../../../../Core/Widgets/button.dart';
+import 'id_text_field.dart';
 
 class StartRatingSection extends StatefulWidget {
   const StartRatingSection({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class _StartRatingSectionState extends State<StartRatingSection> {
             alignment: Alignment.bottomLeft,
             child: Text('    Please enter your number or ID',style: Styles.textStyle12,)),
         const SizedBox(height: 8,),
-        RatingTextField(onChanged: (String text) {
+        IdTextField(onChanged: (String text) {
           t=text;
           setState(() {
           });

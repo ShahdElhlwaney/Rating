@@ -25,7 +25,7 @@ class ClientRateViewBody extends StatelessWidget {
             Text('What Is your rate about our service?'
               ,style: Styles.textStyle16,textAlign: TextAlign.end,),
             SizedBox(height: 23,),
-            RateTextField(),
+            RateTextField(onChanged: (String ) {  },),
             SizedBox(
               height: 214,
             ),

@@ -20,7 +20,7 @@ class RateUsViewBody extends StatelessWidget {
       children: [
         ImageScreen(imageUrl: Assets.rateUs),
         Padding(
-          padding: const EdgeInsets.only(bottom: 70),
+          padding: const EdgeInsets.only(bottom: 70,right: 16,left: 16),
           child: Button(text: 'Rate US', onPressed: () {
             GoRouter.of(context).push(AppRouter.kStartRatingView);
             //Navigator.push(context, MaterialPageRoute(builder: (context)=>StartRatingView()));

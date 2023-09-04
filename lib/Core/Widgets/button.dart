@@ -18,11 +18,11 @@ class Button extends StatelessWidget {
       height: 40,
       width: MediaQuery.of(context).size.width,
       child: TextButton(onPressed: onPressed
-        , child: Text(text,style: Styles.textStyle14,),
+        ,
         style: TextButton.styleFrom(
             backgroundColor: color ,
             shape: setBorderRadius4()
-        ),),
+        ), child: Text(text,style: Styles.textStyle14,),),
     );
 
 

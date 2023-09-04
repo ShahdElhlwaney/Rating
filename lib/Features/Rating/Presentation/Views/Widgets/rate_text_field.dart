@@ -6,21 +6,21 @@ import 'package:rating_app/Core/Utils/styles.dart';
 import '../../../../../Core/Utils/colors.dart';
 
 class RateTextField extends StatelessWidget {
-  const RateTextField({Key? key}) : super(key: key);
-
+   const RateTextField({Key? key, required this.onChanged}) : super(key: key);
+   final void Function(String) onChanged;
   @override
   Widget build(BuildContext context) {
+    TextEditingController controller=TextEditingController();
+
     return SizedBox(
-      width: MediaQuery.of(context).size.width,
       height: 24,
       child: TextField(
+        controller:controller ,
+        onChanged: onChanged,
         decoration: InputDecoration(
-          suffixIcon: Align(
-            alignment: Alignment.topRight,
-            child: Text('0 / 500',style: Styles.textStyle12.copyWith(
-              color: ColorsApp.inActiveEmojiColor
-            ),),
-          )
+          suffixIcon: Text('    0 / 500',style: Styles.textStyle12.copyWith(
+            color: ColorsApp.inActiveEmojiColor
+          ),)
         ),
       ),
     );
