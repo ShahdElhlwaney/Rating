@@ -8,7 +8,6 @@ import 'package:rating_app/Core/Utils/styles.dart';
 import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/welcome_rating_section.dart';
 
 import '../../../../../Core/Widgets/button.dart';
-import 'custom_client_response.dart';
 import 'feedback_chose_row.dart';
 
 class FeedbackChoseViewBody extends StatelessWidget {

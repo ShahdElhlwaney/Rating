@@ -18,9 +18,9 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   smooth_page_indicator: ^1.1.0
-  go_router:
-  dartz:
-  dio:
+  go_router: ^10.1.2
+  dartz: ^0.10.1
+  dio: ^5.3.2
   flutter:
     sdk: flutter
 

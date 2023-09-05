@@ -16,8 +16,7 @@ class CustomFeedbackType extends StatelessWidget {
         GoRouter.of(context).push(AppRouter.kFeedbackChoseView);
       },
       child: Container(
-        height: 52,      // Border.all(color:color==ColorsApp.activeClientResponseColor?
-        //  ColorsApp.activeClientResponseColor:ColorsApp.inActiveEmojiColor)
+        height: 52,
         width: MediaQuery.of(context).size.width*.5-26,
         alignment: Alignment.center,
         decoration: BoxDecoration(

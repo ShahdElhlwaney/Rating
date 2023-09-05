@@ -6,7 +6,8 @@ import 'package:rating_app/Features/Splash/Presentation/Views/rate-us_view.dart'
 import 'package:rating_app/Features/Splash/Presentation/Views/splash1_view.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../splash2_view.dart';
+import 'package:rating_app/features/splash/presentation/views/splash2_view.dart';
+
 
 final controller=PageController();
 class Splash extends StatelessWidget {
@@ -30,7 +31,7 @@ class Splash extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 40),
             child: SmoothPageIndicator(
-                controller: controller,  // PageController
+                controller: controller,
                 count:  3,
                 effect: const SlideEffect(
                      spacing: 8.0,
@@ -41,7 +42,7 @@ class Splash extends StatelessWidget {
                      strokeWidth: 0,
                      dotColor: Colors.grey,
                      activeDotColor: Colors.white
-      ), // your preferred effect
+      ),
                 onDotClicked: (index){
                 }
             ),

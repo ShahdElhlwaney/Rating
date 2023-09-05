@@ -2,15 +2,16 @@
 import 'package:go_router/go_router.dart';
 import 'package:rating_app/Features/Rating/Presentation/Views/check_satisfied_view.dart';
 
-import '../../Features/Rating/Presentation/Views/back_to_home_view.dart';
-import '../../Features/Rating/Presentation/Views/client_rate_view.dart';
-import '../../Features/Rating/Presentation/Views/client_services_view.dart';
-import '../../Features/Rating/Presentation/Views/emoji_view.dart';
-import '../../Features/Rating/Presentation/Views/feedback_chose_view.dart';
-import '../../Features/Rating/Presentation/Views/feedback_client_view.dart';
-import '../../Features/Rating/Presentation/Views/start_rating_view.dart';
-import '../../Features/Rating/Presentation/Views/thanks_rating_view.dart';
-import '../../Features/Splash/Presentation/Views/Widgets/splash.dart';
+import 'package:rating_app/Features/Splash/Presentation/Views/Widgets/splash.dart';
+
+import 'package:rating_app/Features/Rating/Presentation/Views/back_to_home_view.dart';
+import 'package:rating_app/Features/Rating/Presentation/Views/client_rate_view.dart';
+import 'package:rating_app/Features/Rating/Presentation/Views/client_services_view.dart';
+import 'package:rating_app/Features/Rating/Presentation/Views/emoji_view.dart';
+import 'package:rating_app/Features/Rating/Presentation/Views/feedback_chose_view.dart';
+import 'package:rating_app/Features/Rating/Presentation/Views/feedback_client_view.dart';
+import 'package:rating_app/Features/Rating/Presentation/Views/start_rating_view.dart';
+import 'package:rating_app/Features/Rating/Presentation/Views/thanks_rating_view.dart';
 
 abstract class AppRouter
 {
@@ -24,7 +25,6 @@ abstract class AppRouter
   static const kFeedbackClientView='/feedbackClientView';
   static const kComeBackToHomeView='/comeBackView';
 
-// GoRouter configuration
   static final router = GoRouter(
     routes: [
       GoRoute(

@@ -3,7 +3,6 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/skip_button.dart';
 import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/welcome_rating_section.dart';
 
 import '../../../../../Core/Utils/colors.dart';
