@@ -2,10 +2,10 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:rating_app/Core/Methods/set_border_radius_4.dart';
 import 'package:rating_app/Core/Utils/colors.dart';
 import 'package:rating_app/Core/Utils/styles.dart';
 
-import '../Methods/set_border_radius_4.dart';
 
 class Button extends StatelessWidget {
   const Button({Key? key, required this.text, required this.onPressed,  this.color=ColorsApp.mainColor}) : super(key: key);

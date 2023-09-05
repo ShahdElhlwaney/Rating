@@ -6,7 +6,6 @@ import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/welcome_ra
 import '../../../../../Core/Utils/colors.dart';
 import '../../../../../Core/Utils/styles.dart';
 import '../../../../../Core/Widgets/button.dart';
-import 'change_state_section.dart';
 import 'custom_emoji.dart';
 
 

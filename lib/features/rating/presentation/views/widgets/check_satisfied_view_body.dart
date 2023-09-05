@@ -5,7 +5,6 @@ import 'package:rating_app/Features/Rating/Presentation/Views/Widgets/welcome_ra
 
 import '../../../../../Core/Utils/styles.dart';
 import 'client_satisfied_response_section.dart';
-import 'custom_client_response.dart';
 
 class CheckSatisfiedViewBody extends StatelessWidget {
   const CheckSatisfiedViewBody({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rating_app/Core/Methods/set_status_bar_color.dart';
 
-import '../../../../../Core/Methods/set_status_bar_color.dart';
 
 class ImageScreen extends StatelessWidget {
   const ImageScreen({
